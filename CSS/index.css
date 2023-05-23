@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 0 auto;
+    background-color: #7FFFD4;
+    width: 100%;
+}
+
+header, footer{
+    background-color: white;
+    color: black;
+    padding: 30px 50px;
+}
+
+.grid{
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: magenta;
+}
+
+.cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid, .cell{
+    border: 2px black solid;
+}
+
+.selected{
+    background-color: magenta;
+}
