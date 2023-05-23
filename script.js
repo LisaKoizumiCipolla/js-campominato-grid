@@ -1,6 +1,15 @@
 
+//input button
+const button = document.getElementById('button');
+
+//click on button to reset
+button.addEventListener('click', function () {
+
+
+
 // get base grid
 const gridElement = document. getElementById("grid");
+gridElement.classList.add("grid");
 
 // populate all 100 slots in grid and add effect on click
 for (let i = 1 ; i <= 100 ; i++){
@@ -10,6 +19,7 @@ for (let i = 1 ; i <= 100 ; i++){
 
     newCell.addEventListener ("click", function() {
         newCell.classList.toggle("selected");
+        console.log(number);
     }); 
     
     gridElement.appendChild(newCell);
@@ -23,3 +33,4 @@ function createElement(tagName, className){
     return cellElement;
 }
 
+});
