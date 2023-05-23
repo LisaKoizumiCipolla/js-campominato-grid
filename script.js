@@ -5,11 +5,9 @@ const button = document.getElementById('button');
 //click on button to reset
 button.addEventListener('click', function () {
 
-    let container = document.getElementById("container");
-    container.innerHTML = "";
-    
     // get base grid
     const gridElement = document. getElementById("grid");
+    gridElement.innerHTML = "" ;
     gridElement.classList.add("grid");
 
 
