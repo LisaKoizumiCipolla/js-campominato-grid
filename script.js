@@ -3,9 +3,11 @@
 const gridElement = document. getElementById("grid");
 
 // populate all 100 slots in grid and add effect on click
-for (let i = 0 ; i < 100 ; i++){
+for (let i = 1 ; i <= 100 ; i++){
     const newCell = createElement("div", "cell");
-    
+    let number = i
+    newCell.innerHTML = (number);
+
     newCell.addEventListener ("click", function() {
         newCell.classList.toggle("selected");
     }); 
@@ -17,10 +19,7 @@ for (let i = 0 ; i < 100 ; i++){
 function createElement(tagName, className){
     const cellElement = document.createElement(tagName);
     cellElement.className = className;
-    for (let i = 0 ; i < 100 ; i++){
-        let number = i
-        cellElement.innerHTML = (number);
-    }
 
     return cellElement;
 }
+

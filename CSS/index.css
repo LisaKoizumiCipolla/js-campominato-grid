@@ -20,7 +20,7 @@ header, footer{
     height: 600px;
     width: 600px;
     margin: 0 auto;
-    background-color: magenta;
+    background-color: rgb(162, 162, 218);
 }
 
 .cell{
